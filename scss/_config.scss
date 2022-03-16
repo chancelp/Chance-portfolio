@@ -1,0 +1,17 @@
+//Variables
+$website-width: 1280px;
+$main-color: #ace3e6;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #4c599b;
+$bg-image-front: url("/dist/img/ChanceSolution_Front_About_Page/Front-page.png");
+$bg-image-about: url("/dist/img/ChanceSolution_Front_About_Page/About_page.png");
+
+//Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
